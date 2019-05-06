@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh Tong</title>
+</head>
+<body>
+<input type="number" id="nhap">
+<button onclick="Tinh()">Tinh Tong</button>
+<p id="hienthi"></p>
+<script>
+    function Tinh() {
+        let a = document.getElementById("nhap").value;
+        let A = parseFloat(a);
+        let b = 0;
+        let i = 1;
+        for (i; i <= A; i++) {
+            b = b + i;
+        }
+        document.getElementById("hienthi").innerHTML = "ket qua la: " + b;
+    }
+
+</script>
+
+</body>
+</html>
